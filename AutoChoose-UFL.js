@@ -21,15 +21,19 @@
 // 进入console,复制修改后的代码然后按回车，便可以自动刷课。
 // 测试一天刷近4000次会被踢下,再次登陆即可。
 
+
+//修改的地方在这里 Modify code here==================
 var courseArr = [1, 2, 3];
+//================================
 
 
+//以下代码都不需要修改 Don't modify code below!
 var count = 0;
 function btnClick() {
     document.getElementsByClassName("modal-confirm-btn")[0].click();
 }
 function chooseCourse() {
-    if (count === courseArr.length - 1)
+    if (count >= courseArr.length - 1)
         count = 0;
     var location = courseArr[count];
     document.getElementsByClassName("course-code")[location].click();
